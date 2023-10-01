@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 public class MainActivity extends Activity {
     public int contador;
 
@@ -33,7 +31,8 @@ public class MainActivity extends Activity {
         mostrarResultado();
     }
     public void mostrarResultado(){
-        TextView textoResultado = (TextView)findViewById(R.id.ContadorPulsaciones);
-        textoResultado.setText("Contador: " + contador);
+        TextView textoResultado = (TextView)findViewById(R.id.contadorTexto);
+        textoResultado.setText("" + contador);
+
     }
 }

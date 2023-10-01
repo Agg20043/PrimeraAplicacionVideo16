@@ -45,13 +45,21 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/ContadorPulsaciones"
-        android:layout_width="171dp"
-        android:layout_height="93dp"
-        android:layout_marginStart="120dp"
+        android:id="@+id/tituloTexto"
+        android:layout_width="84dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="160dp"
         android:layout_marginTop="16dp"
         android:text="Contador:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contadorTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="56dp"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="55dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
