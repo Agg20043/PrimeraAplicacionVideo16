@@ -8,58 +8,76 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/Resetea"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="340dp"
-        android:onClick="reseteaContador"
-        android:text="Resetear"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="358dp"
+        android:layout_height="171dp"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="469dp"
+        tools:ignore="MissingConstraints">
 
-    <Button
-        android:id="@+id/Incrementar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="268dp"
-        android:onClick="incrementaContador"
-        android:text="Incrementa"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        <Button
+            android:id="@+id/Resetea"
+            android:layout_width="236dp"
+            android:layout_height="74dp"
+            android:onClick="reseteaContador"
+            android:text="Resetear"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/Decrementar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="416dp"
-        android:onClick="restaContador"
-        android:text="Decrementa"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="291dp"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="171dp">
 
-    <TextView
-        android:id="@+id/tituloTexto"
-        android:layout_width="84dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="16dp"
-        android:text="Contador:"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/Decrementar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="restaContador"
+            android:text="-"
+            tools:ignore="MissingConstraints"
+            android:textSize="70dp" />
 
-    <TextView
-        android:id="@+id/contadorTexto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="56dp"
-        tools:layout_editor_absoluteX="176dp"
-        tools:layout_editor_absoluteY="55dp" />
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="0dp"/>
+        <Button
+            android:id="@+id/Incrementar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="incrementaContador"
+            android:text="+"
+            tools:ignore="MissingConstraints"
+            android:textSize="70dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="169dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tituloTexto"
+            android:layout_width="84dp"
+            android:layout_height="37dp"
+            android:text="Contador:" />
+
+        <TextView
+            android:id="@+id/contadorTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="56dp" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
